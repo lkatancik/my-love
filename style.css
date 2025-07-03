@@ -1,0 +1,65 @@
+/* General Page Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffe6f0;
+    background-image: url('https://www.transparenttextures.com/patterns/hearts.png');
+    background-repeat: repeat;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Homepage-specific styles */
+.container {
+    text-align: center;
+    padding: 40px;
+    max-width: 700px;
+    background-color: #fff0f5;
+    border: 2px solid #ffb6c1;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.3);
+}
+
+.container img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    font-size: 36px;
+    color: #d63384;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button-grid a {
+    text-decoration: none;
+    background-color: #ff69b4;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+    font-weight: bold;
+}
+
+.button-grid a:hover {
+    background-color: #e75480;
+}
