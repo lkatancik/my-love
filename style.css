@@ -33,15 +33,15 @@ body {
 }
 
 .container h1 {
-    font-size: 36px;
+    font-size: 48px; /* was 36px */
     color: #d63384;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .container p {
-    font-size: 18px;
+    font-size: 22px; /* was 18px */
     color: #444;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .button-grid {
