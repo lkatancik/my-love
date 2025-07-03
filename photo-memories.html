@@ -18,33 +18,42 @@
         }
 
         .album-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-.album {
-    background: #fff0f5;
-    border: 2px solid #ffc1cc;
-    border-radius: 20px;
-    width: 100%;
-    max-width: 500px; /* NEW */
-    padding: 60px;
-    font-size: 40px;
-    text-align: center; /* NEW - ensures text is centered */
-    box-sizing: border-box; /* NEW - so padding doesn't add overflow */
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .album {
+            background: #fff0f5;
+            border: 2px solid #ffc1cc;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 500px;
+            padding: 60px;
+            font-size: 40px;
+            text-align: center;
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
         .album:hover {
             transform: scale(1.05);
         }
+
         .album h2 {
-    margin: 0;
-    font-size: 40px;
-    color: #e75480;
-    word-wrap: break-word; /* in case of long text */
-}
+            margin: 0;
+            font-size: 40px;
+            color: #e75480;
+        }
+
+        .album p {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
         .gallery {
             display: none;
             margin-top: 30px;
@@ -71,18 +80,24 @@
         }
 
         .back-button {
-    display: inline-block;
-    margin: 30px auto;
-    padding: 14px 30px;
-    font-size: 18px;
-    background: #ff99bb;
-    color: white;
-    text-decoration: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
+            display: inline-block;
+            padding: 14px 30px;
+            font-size: 18px;
+            background: #ff99bb;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
         .back-button:hover {
             background: #e75480;
+        }
+
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -101,6 +116,9 @@
             <h2>💁‍♀️ Just You</h2>
             <p>Coming soon</p>
         </div>
+    </div>
+
+    <div class="button-wrapper">
         <a href="index.html" class="back-button">← Back to Home</a>
     </div>
 
@@ -125,7 +143,10 @@
             <img src="us/us2.jpg" alt="Us 18" />
             <img src="us/us3.jpg" alt="Us 19" />
         </div>
-        <a href="#" class="back-button" onclick="backToAlbums(event)">← Back to Albums</a>
+
+        <div class="button-wrapper">
+            <a href="#" class="back-button" onclick="backToAlbums(event)">← Back to Albums</a>
+        </div>
     </div>
 
     <script>
@@ -133,6 +154,7 @@
             document.querySelector('.album-container').style.display = 'none';
             document.getElementById(id).style.display = 'block';
         }
+
         function backToAlbums(event) {
             event.preventDefault();
             document.querySelector('.album-container').style.display = 'flex';
