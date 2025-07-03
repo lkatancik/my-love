@@ -67,7 +67,7 @@ body {
 
 .back-button {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 100px; /* Increase this if needed */
     margin-bottom: 30px;
     padding: 10px 20px;
     background-color: #ff69b4;
@@ -78,8 +78,4 @@ body {
     border: none;
     cursor: pointer;
     transition: background-color 0.2s;
-}
-
-.back-button:hover {
-    background-color: #e75480;
 }
