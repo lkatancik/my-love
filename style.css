@@ -79,3 +79,25 @@ body {
     cursor: pointer;
     transition: background-color 0.2s;
 }
+
+/* Image gallery grid */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding-bottom: 100px;
+}
+
+.image-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.03);
+}
