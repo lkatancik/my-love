@@ -67,7 +67,7 @@ body {
 
 .back-button {
     display: inline-block;
-    margin-top: 100px; /* Increase this if needed */
+    margin-top: 300px;
     margin-bottom: 30px;
     padding: 10px 20px;
     background-color: #ff69b4;
