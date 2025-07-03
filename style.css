@@ -82,13 +82,13 @@ body {
 
 /* Image gallery grid */
 .image-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns, equal width */
-    gap: 20px;
-    width: 90%;
-    max-width: 1000px;
-    margin: 40px auto;
-    padding-bottom: 100px;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 20px !important;
+    width: 90% !important;
+    max-width: 1000px !important;
+    margin: 40px auto !important;
+    padding-bottom: 100px !important;
 }
 
 .image-gallery img {
