@@ -39,9 +39,9 @@ body {
 }
 
 .container p {
-    font-size: 22px; /* was 18px */
+    font-size: 30px; /* was 18px */
     color: #444;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
 }
 
 .button-grid {
@@ -55,8 +55,8 @@ body {
     text-decoration: none;
     background-color: #ff69b4;
     color: white;
-    font-size: 18px; /* new */
-    padding: 16px 28px; /* was 12px 20px */
+    font-size: 24px; /* new */
+    padding: 20px 32px; /* was 12px 20px */
     border-radius: 12px; /* slightly rounder */
 }
     transition: background-color 0.2s;
