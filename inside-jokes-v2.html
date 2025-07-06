@@ -14,47 +14,46 @@
     }
 
     h1, h2 {
-            color: #d63384;
-            margin-bottom: 40px;
-        }
+      color: #d63384;
+      margin-bottom: 40px;
+    }
 
-        .album-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
+    .album-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
 
-        .album {
-            background: #fff0f5;
-            border: 2px solid #ffc1cc;
-            border-radius: 20px;
-            width: 100%;
-            max-width: 500px;
-            padding: 60px;
-            font-size: 40px;
-            text-align: center;
-            box-sizing: border-box;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-        }
+    .album {
+      background: #fff0f5;
+      border: 2px solid #ffc1cc;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 500px;
+      padding: 60px;
+      font-size: 40px;
+      text-align: center;
+      box-sizing: border-box;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
 
-        .album:hover {
-            transform: scale(1.05);
-        }
+    .album:hover {
+      transform: scale(1.05);
+    }
 
-        .album h2 {
-            margin: 0;
-            font-size: 40px;
-            color: #e75480;
-        }
+    .album h2 {
+      margin: 0;
+      font-size: 40px;
+      color: #e75480;
+    }
 
-        .album p {
-            font-size: 20px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
+    .album p {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
 
     .section {
       display: none;
@@ -96,28 +95,28 @@
       color: #ff69b4;
     }
 
-     .back-button {
-            display: inline-block;
-            padding: 14px 30px;
-            font-size: 18px;
-            background: #ff99bb;
-            color: white;
-            text-decoration: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
+    .back-button {
+      display: inline-block;
+      padding: 14px 30px;
+      font-size: 18px;
+      background: #ff99bb;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
 
-        .back-button:hover {
-            background: #e75480;
-        }
+    .back-button:hover {
+      background: #e75480;
+    }
 
-        .button-wrapper {
-            width: 100%;             /* full width */
-            display: flex;           /* flex container */
-            justify-content: center; /* center horizontally */
-            align-items: center;     /* center vertically if needed */
-            margin-top: 40px;
-        }
+    .button-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
@@ -137,7 +136,10 @@
       <h2>📷 Weird Pics</h2>
       <p>Coming soon</p>
     </div>
+  </div>
 
+  <!-- Moved and wrapped this to be outside the album container and properly centered -->
+  <div class="button-wrapper">
     <a href="index.html" class="back-button">← Back to Home</a>
   </div>
 
@@ -179,7 +181,11 @@
       <div class="quote">I want your dick and your tit balls</div>
       <div class="quote">I sure hope there’s no self-respecting women who get came on all the time by Landon’s donkey dick</div>
     </div>
-    <a href="#" class="back-button" onclick="goBack(event)">← Back to Albums</a>
+
+    <!-- Centered back button under quote list -->
+    <div class="button-wrapper">
+      <a href="#" class="back-button" onclick="goBack(event)">← Back to Albums</a>
+    </div>
   </div>
 
   <script>
