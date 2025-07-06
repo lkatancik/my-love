@@ -13,38 +13,48 @@
       text-align: center;
     }
 
-    h1 {
-      color: #d63384;
-      font-size: 42px;
-      margin-bottom: 40px;
-    }
+    h1, h2 {
+            color: #d63384;
+            margin-bottom: 40px;
+        }
 
-    .album-container {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
+        .album-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
 
-    .album {
-      background: #ffe6f0;
-      border: 2px solid #ffc1cc;
-      border-radius: 20px;
-      width: 300px;
-      padding: 30px;
-      cursor: pointer;
-      transition: transform 0.2s ease;
-    }
+        .album {
+            background: #fff0f5;
+            border: 2px solid #ffc1cc;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 500px;
+            padding: 60px;
+            font-size: 40px;
+            text-align: center;
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
 
-    .album:hover {
-      transform: scale(1.05);
-    }
+        .album:hover {
+            transform: scale(1.05);
+        }
 
-    .album h2 {
-      margin: 0;
-      font-size: 24px;
-      color: #e75480;
-    }
+        .album h2 {
+            margin: 0;
+            font-size: 40px;
+            color: #e75480;
+        }
+
+        .album p {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
 
     .section {
       display: none;
