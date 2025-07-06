@@ -88,6 +88,7 @@
             text-decoration: none;
             border-radius: 10px;
             cursor: pointer;
+            margin-top: 40px;
         }
 
         .back-button:hover {
@@ -95,10 +96,10 @@
         }
 
         .button-wrapper {
-            width: 100%;             /* full width */
-            display: flex;           /* flex container */
-            justify-content: center; /* center horizontally */
-            align-items: center;     /* center vertically if needed */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-top: 40px;
         }
     </style>
@@ -119,8 +120,6 @@
             <p>Coming soon</p>
         </div>
     </div>
-
-    <div class="button-wrapper">
 
     <div id="us-gallery" class="gallery">
         <h2>💞 Us Together</h2>
@@ -162,5 +161,9 @@
             galleries.forEach(gallery => gallery.style.display = 'none');
         }
     </script>
+
+    <div class="button-wrapper">
+        <a href="index.html" class="back-button">← Back to Home</a>
+    </div>
 </body>
 </html>
