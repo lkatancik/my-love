@@ -19,24 +19,40 @@
       margin-bottom: 40px;
     }
 
-    .letter-section {
+    .collapsible {
+      background-color: #ffe6f0;
+      color: #e75480;
+      cursor: pointer;
+      padding: 20px 30px;
+      width: 100%;
       max-width: 800px;
-      margin: 40px auto;
-      background-color: #fff;
-      padding: 30px;
       border: 2px solid #ffc1cc;
-      border-radius: 20px;
-      box-shadow: 0 4px 15px rgba(255, 182, 193, 0.3);
+      border-radius: 15px;
+      text-align: left;
+      font-size: 22px;
+      font-weight: bold;
+      margin: 20px auto 0 auto;
+      transition: background-color 0.2s ease;
+    }
+
+    .collapsible:hover {
+      background-color: #ffd6e8;
+    }
+
+    .content {
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+      padding: 0 30px 20px 30px;
+      background-color: #fff;
+      border: 2px solid #ffc1cc;
+      border-top: none;
+      border-radius: 0 0 15px 15px;
+      display: none;
+      overflow: hidden;
       text-align: left;
     }
 
-    .letter-section h2 {
-      font-size: 28px;
-      color: #e75480;
-      margin-bottom: 20px;
-    }
-
-    .letter-section p {
+    .content p {
       font-size: 18px;
       line-height: 1.6;
       white-space: pre-line;
@@ -51,6 +67,7 @@
       text-decoration: none;
       border-radius: 10px;
       font-weight: bold;
+      transition: background-color 0.2s;
     }
 
     .back-button:hover {
@@ -61,8 +78,8 @@
 <body>
   <h1>💌 Letters to You</h1>
 
-  <div class="letter-section">
-    <h2>💖 Deepness of Our Love</h2>
+  <button class="collapsible">💖 Deepness of Our Love</button>
+  <div class="content">
     <p>
 There are no words that can truly capture what I feel for you. Every time I try to explain it, the words feel too small, too simple to hold the weight of what you mean to me. It is not just love, it is something deeper, something that has become a part of who I am. You are not just someone I love, you are the place where I feel most myself, the person who sees every side of me and still stays, still chooses me every day.
 
@@ -72,16 +89,31 @@ When I think about us, I don’t just see love as people write about it in books
     </p>
   </div>
 
-  <div class="letter-section">
-    <h2>🏠 About Our Lives</h2>
-    <p>[Talk about your day-to-day love, how you live together, or your favorite parts of being a couple]</p>
+  <button class="collapsible">🏠 About Our Lives</button>
+  <div class="content">
+    <p>
+[Talk about your day-to-day love, how you live together, or your favorite parts of being a couple]
+    </p>
   </div>
 
-  <div class="letter-section">
-    <h2>🌅 Hopes for Our Future</h2>
-    <p>[Dream together — what you hope for, imagine, or look forward to building with her]</p>
+  <button class="collapsible">🌅 Hopes for Our Future</button>
+  <div class="content">
+    <p>
+[Dream together — what you hope for, imagine, or look forward to building with her]
+    </p>
   </div>
 
   <a href="index.html" class="back-button">← Back to Home</a>
+
+  <script>
+    const collapsibles = document.querySelectorAll(".collapsible");
+    collapsibles.forEach(button => {
+      button.addEventListener("click", function () {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        content.style.display = content.style.display === "block" ? "none" : "block";
+      });
+    });
+  </script>
 </body>
 </html>
