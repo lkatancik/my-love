@@ -14,53 +14,45 @@
     }
 
     h1 {
-      font-size: 42px;
       color: #d63384;
+      font-size: 42px;
       margin-bottom: 40px;
     }
 
-    .collapsible {
-      background-color: #ffe6f0;
+    details.letter-section {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      border: 2px solid #ffb6c1;
+      border-radius: 20px;
+      padding: 20px 30px;
+      box-shadow: 0 0 15px rgba(255, 182, 193, 0.3);
+      text-align: left;
+    }
+
+    details summary {
+      font-size: 26px;
+      font-weight: bold;
       color: #e75480;
       cursor: pointer;
-      padding: 20px 30px;
-      width: 100%;
-      max-width: 800px;
-      border: 2px solid #ffc1cc;
-      border-radius: 15px;
-      text-align: left;
-      font-size: 22px;
-      font-weight: bold;
-      margin: 20px auto 0 auto;
-      transition: background-color 0.2s ease;
+      margin-bottom: 10px;
+      outline: none;
     }
 
-    .collapsible:hover {
-      background-color: #ffd6e8;
+    details[open] summary {
+      margin-bottom: 20px;
     }
 
-    .content {
-      max-width: 800px;
-      margin: 0 auto 20px auto;
-      padding: 0 30px 20px 30px;
-      background-color: #fff;
-      border: 2px solid #ffc1cc;
-      border-top: none;
-      border-radius: 0 0 15px 15px;
-      display: none;
-      overflow: hidden;
-      text-align: left;
-    }
-
-    .content p {
+    details p {
       font-size: 18px;
       line-height: 1.6;
-      white-space: pre-line;
+      margin: 0;
+      color: #444;
     }
 
     .back-button {
       display: inline-block;
-      margin-top: 50px;
+      margin-top: 40px;
       padding: 12px 24px;
       background: #ff99bb;
       color: white;
@@ -71,49 +63,46 @@
     }
 
     .back-button:hover {
-      background-color: #e75480;
+      background: #e75480;
     }
   </style>
 </head>
 <body>
-  <h1>💌 Letters to You</h1>
+  <h1>💌 Letters</h1>
 
-  <button class="collapsible">💖 Deepness of Our Love</button>
-  <div class="content">
+  <details class="letter-section">
+    <summary>❤️ Deepness of Our Love</summary>
     <p>
-There are no words that can truly capture what I feel for you. Every time I try to explain it, the words feel too small, too simple to hold the weight of what you mean to me. It is not just love, it is something deeper, something that has become a part of who I am. You are not just someone I love, you are the place where I feel most myself, the person who sees every side of me and still stays, still chooses me every day.
+      There are no words that can truly capture what I feel for you. Every time I try to explain it, the words feel too small, too simple to hold the weight of what you mean to me. It is not just love, it is something deeper, something that has become a part of who I am. You are not just someone I love, you are the place where I feel most myself, the person who sees every side of me and still stays, still chooses me every day.<br><br>
 
-Our love is not just about the good moments, though those are endless and beautiful. It is about how we move through everything together, how even in the quiet or chaotic moments there is this unshakable sense of us. We don’t need to try to be something we are not, because what we are together is already everything. I look at you and I feel like I’m looking at the one thing in this world that is truly real, something that can never be replaced or replicated.
+      Our love is not just about the good moments, though those are endless and beautiful. It is about how we move through everything together, how even in the quiet or chaotic moments there is this unshakable sense of us. We do not need to try to be something we are not, because what we are together is already everything. I look at you and I feel like I am looking at the one thing in this world that is truly real, something that can never be replaced or replicated.<br><br>
 
-When I think about us, I don’t just see love as people write about it in books or songs. I see something living, something we’ve built without even realizing it, something stronger than the words I could use to describe it. You are my heart, my safe place, and the one person who feels like home. Nothing else compares to that feeling, and I don’t think it ever could.
+      When I think about us, I do not just see love as people write about it in books or songs. I see something living, something we have built without even realizing it, something stronger than the words I could use to describe it. You are my heart, my safe place, and the one person who feels like home. Nothing else compares to that feeling, and I do not think it ever could.
     </p>
-  </div>
+  </details>
 
-  <button class="collapsible">🏠 About Our Lives</button>
-  <div class="content">
+  <details class="letter-section">
+    <summary>🏠 About Our Lives</summary>
     <p>
-[Talk about your day-to-day love, how you live together, or your favorite parts of being a couple]
-    </p>
-  </div>
+      Loving you is not just something I feel. It is something I live every single day. From the moment we wake up to the quiet moments before sleep, our life together is filled with the kind of comfort and joy that most people spend their whole lives searching for. Even in the mundane, you make everything feel like it has meaning. It matters more because you are part of it.<br><br>
 
-  <button class="collapsible">🌅 Hopes for Our Future</button>
-  <div class="content">
-    <p>
-[Dream together — what you hope for, imagine, or look forward to building with her]
+      We laugh at the smallest things, create weird little routines that somehow feel sacred, and find new ways every day to show each other how deeply we care. Our home is not just a space. It is a reflection of us. The inside jokes that live in our walls, the way we share food, the way we look at each other across the room and just know what the other is thinking. We have built something rare and real.<br><br>
+
+      I love our life not because it is perfect, but because it is ours. The messiness, the growth, the comfort, the fire. It is everything I have ever wanted. You make even the hard days feel lighter just by being you.
     </p>
-  </div>
+  </details>
+
+  <details class="letter-section">
+    <summary>🌅 Hopes for Our Future</summary>
+    <p>
+      When I think about the future, it is not a place or a goal. It is you. It is us, still choosing each other every single day, just like we do now. I imagine adventures we have not taken yet, cities we will explore hand in hand, and quiet Sunday mornings we will still share like they are something brand new.<br><br>
+
+      I see a life where we grow stronger with time. Not just in love, but in trust, in understanding, and in depth. I want a future where we build something lasting, whatever it looks like for us, and where we are each other's anchor when life feels overwhelming. I want to be there for every high and every low, knowing there is no one else I would rather face anything with.<br><br>
+
+      Whatever comes our way, I do not just hope we make it through. I believe we will. Because we are not just dreaming about forever. We are creating it with every moment, with every touch, with every quiet "I love you." That, to me, is the most beautiful future I can imagine.
+    </p>
+  </details>
 
   <a href="index.html" class="back-button">← Back to Home</a>
-
-  <script>
-    const collapsibles = document.querySelectorAll(".collapsible");
-    collapsibles.forEach(button => {
-      button.addEventListener("click", function () {
-        this.classList.toggle("active");
-        const content = this.nextElementSibling;
-        content.style.display = content.style.display === "block" ? "none" : "block";
-      });
-    });
-  </script>
 </body>
 </html>
