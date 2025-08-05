@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inside Jokes</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .album-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color:#d63384; text-align:center; margin-top:40px;">😂 Inside Jokes</h1>
+  <div class="album-container" id="albums">
+    <div class="album" onclick="showSection('quotes')">
+      <h2>💬 Quote List</h2>
+    </div>
+    <div class="album">
+      <h2>🎥 Funny Clips</h2>
+      <p>Coming soon</p>
+    </div>
+    <div class="album">
+      <h2>📷 Weird Pics</h2>
+      <p>Coming soon</p>
+    </div>
+    <a href="index.html" class="back-button">← Back to Home</a>
+  </div>
+
+  <div class="section" id="quotes" style="display:none;">
+    <h2 style="color:#d63384;">💬 Quote List</h2>
+    <div class="quote-section">
+      <div class="quote">Pika pika what that mouth do</div>
+      <!-- More quotes go here -->
+    </div>
+    <a href="#" class="back-button" onclick="goBack(event)">← Back to Albums</a>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.getElementById('albums').style.display = 'none';
+      document.getElementById(id).style.display = 'block';
+    }
+    function goBack(event) {
+      event.preventDefault();
+      document.getElementById('quotes').style.display = 'none';
+      document.getElementById('albums').style.display = 'flex';
+    }
+  </script>
+</body>
+</html>
