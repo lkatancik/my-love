@@ -1,0 +1,200 @@
+
+/* General Page Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffe6f0;
+    background-image: url('assets/hearts-bg.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Homepage-specific styles */
+.container {
+    text-align: center;
+    padding: 40px;
+    max-width: 700px;
+    background-color: #fff0f5;
+    border: 2px solid #ffb6c1;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.3);
+    margin: 40px 20px;
+}
+
+.container img {
+    max-width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    font-size: 36px;
+    color: #d63384;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.button-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button-grid a {
+    text-decoration: none;
+    background-color: #ff69b4;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.button-grid a:hover {
+    background-color: #e75480;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 12px 24px;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.back-button:hover {
+    background-color: #e75480;
+}
+
+/* Album Buttons */
+.album-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 40px 20px;
+}
+
+.album {
+    background: #fff0f5;
+    border: 2px solid #ffc1cc;
+    border-radius: 20px;
+    width: 500px;
+    padding: 60px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    text-align: center;
+}
+
+.album h2 {
+    font-size: 40px;
+    color: #e75480;
+    margin: 0;
+}
+
+.album:hover {
+    transform: scale(1.05);
+}
+
+/* Image gallery grid */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding-bottom: 100px;
+}
+
+.image-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* Quote styles */
+.quote-section {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    border: 2px solid #ffb6c1;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 0 15px rgba(255, 182, 193, 0.3);
+    text-align: left;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 35px;
+    line-height: 1.5;
+}
+
+.quote::before {
+    content: "❝";
+    position: absolute;
+    left: 0;
+    top: -4px;
+    font-size: 26px;
+    color: #ff69b4;
+}
+
+.quote::after {
+    content: "❞";
+    margin-left: 5px;
+    color: #ff69b4;
+}
+
+/* Letters dropdown */
+.letter {
+    margin: 30px auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+.letter summary {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d63384;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.letter p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 10px;
+    padding-left: 20px;
+}
