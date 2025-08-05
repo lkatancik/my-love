@@ -5,36 +5,163 @@
   <title>Inside Jokes</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #d63384;
+      font-size: 42px;
+      margin-bottom: 40px;
+    }
+
     .album-container {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 30px;
     }
+
+    .album {
+      background: #ffe6f0;
+      border: 2px solid #ffc1cc;
+      border-radius: 20px;
+      width: 300px;
+      padding: 30px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .album:hover {
+      transform: scale(1.05);
+    }
+
+    .album h2 {
+      margin: 0;
+      font-size: 24px;
+      color: #e75480;
+    }
+
+    .section {
+      display: none;
+      margin-top: 40px;
+    }
+
+    .quote-section {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: #fff;
+      border: 2px solid #ffb6c1;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 0 15px rgba(255, 182, 193, 0.3);
+      text-align: left;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 20px;
+      margin-bottom: 25px;
+      position: relative;
+      padding-left: 35px;
+      line-height: 1.5;
+    }
+
+    .quote::before {
+      content: "❝";
+      position: absolute;
+      left: 0;
+      top: -4px;
+      font-size: 26px;
+      color: #ff69b4;
+    }
+
+    .quote::after {
+      content: "❞";
+      margin-left: 5px;
+      color: #ff69b4;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 24px;
+      background: #ff99bb;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: background-color 0.2s;
+      cursor: pointer;
+    }
+
+    .back-button:hover {
+      background: #e75480;
+    }
   </style>
 </head>
 <body>
-  <h1 style="color:#d63384; text-align:center; margin-top:40px;">😂 Inside Jokes</h1>
+  <h1>😂 Inside Jokes</h1>
+
   <div class="album-container" id="albums">
     <div class="album" onclick="showSection('quotes')">
       <h2>💬 Quote List</h2>
     </div>
+
     <div class="album">
       <h2>🎥 Funny Clips</h2>
       <p>Coming soon</p>
     </div>
+
     <div class="album">
       <h2>📷 Weird Pics</h2>
       <p>Coming soon</p>
     </div>
+
     <a href="index.html" class="back-button">← Back to Home</a>
   </div>
 
-  <div class="section" id="quotes" style="display:none;">
-    <h2 style="color:#d63384;">💬 Quote List</h2>
+  <div class="section" id="quotes">
+    <h2>💬 Quote List</h2>
     <div class="quote-section">
       <div class="quote">Pika pika what that mouth do</div>
-      <!-- More quotes go here -->
+      <div class="quote">I hope I’m never like these old stoners that have the brain capacity of a cinnamon roll</div>
+      <div class="quote">*Throws stripper money at me*<br>Me: “What do you want me to take off first?”<br>Mikayla: “Your contacts.”</div>
+      <div class="quote">Good blanket</div>
+      <div class="quote">I don’t care about you crying</div>
+      <div class="quote">LOL you can’t even die</div>
+      <div class="quote">Celsius is like the girl you marry, Red Bull is like the dirty slut you see on Fridays</div>
+      <div class="quote">I feel like I’m drowning in chicken babies</div>
+      <div class="quote">I had many orgasms <small>(Fake news)</small></div>
+      <div class="quote">Oh can it drunkie</div>
+      <div class="quote">I don’t wanna fornicate your tendons</div>
+      <div class="quote">That’s Hisoka not Joker</div>
+      <div class="quote">He doesn’t like my fat pussy</div>
+      <div class="quote">I wish Landon would get off my back</div>
+      <div class="quote">Oh! I got alfredo in my hair</div>
+      <div class="quote">Nicole’s not pretty, you can tell she drinks a lot</div>
+      <div class="quote">I don’t think it’s good for society that people sleep with all kinds of people</div>
+      <div class="quote">At like 6:15 AM driving down the highway in front of my house I literally just started screaming</div>
+      <div class="quote">There’s very few people I wanna have sex with</div>
+      <div class="quote">You thought the joke was gonna be sexual… BUT IT WAS RACIST!</div>
+      <div class="quote">Nicole has pancake titties</div>
+      <div class="quote">Nobody likes you, you have a small penis</div>
+      <div class="quote">Jim: “Me and my buddy were tag teaming the hole coz you know it’s really hard when you’re doing it by hand”</div>
+      <div class="quote">Mikayla: “You can move my box”<br>Me: “I’ll stuff your box”<br>Mikayla: *Dances*</div>
+      <div class="quote">Be a man and buy a Juul</div>
+      <div class="quote">I don’t like sometimes when a bunch of black women get together, how loud they are</div>
+      <div class="quote">I do like tits</div>
+      <div class="quote">I’m more of an ass man</div>
+      <div class="quote">I kinda wanna go look at dicks real quick</div>
+      <div class="quote">I’m weak and hungry</div>
+      <div class="quote">My expectations for you are not high</div>
+      <div class="quote">Are you seriously gonna be mad about me fucking someone’s sister</div>
+      <div class="quote">I want your dick and your tit balls</div>
+      <div class="quote">I sure hope there’s no self-respecting women who get came on all the time by Landon’s donkey dick</div>
     </div>
     <a href="#" class="back-button" onclick="goBack(event)">← Back to Albums</a>
   </div>
@@ -44,6 +171,7 @@
       document.getElementById('albums').style.display = 'none';
       document.getElementById(id).style.display = 'block';
     }
+
     function goBack(event) {
       event.preventDefault();
       document.getElementById('quotes').style.display = 'none';
