@@ -4,26 +4,92 @@
   <meta charset="UTF-8" />
   <title>Why I Love You</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 42px;
+      color: #d63384;
+      margin-bottom: 40px;
+    }
+
+    .heart-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 50px;
+    }
+
+    .heart-item {
+      background-color: #ffccdc;
+      border: 2px solid #ff99bb;
+      border-radius: 20px;
+      padding: 25px 20px;
+      width: 260px;
+      font-size: 18px;
+      box-shadow: 0 4px 10px rgba(255, 182, 193, 0.3);
+    }
+
+    .heart-item::before {
+      content: "❤️ ";
+      font-size: 20px;
+    }
+
+    .love-paragraph {
+      max-width: 800px;
+      margin: 0 auto 60px auto;
+      background-color: #fff;
+      padding: 30px;
+      border: 2px solid #ffc1cc;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(255, 182, 193, 0.3);
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #ff99bb;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .back-button:hover {
+      background-color: #e75480;
+    }
+  </style>
 </head>
 <body>
-  <h1 style="color:#d63384; text-align:center; margin-top:40px;">💖 Why I Love You</h1>
-  <ul style="list-style: none; padding: 0; max-width: 600px; margin: 0 auto;">
-    <li>❤️ your kindness</li>
-    <li>❤️ your love of animals</li>
-    <li>❤️ your intelligence</li>
-    <li>❤️ your beauty</li>
-    <li>❤️ your humor</li>
-    <li>❤️ your voice</li>
-    <li>❤️ your stubbornness</li>
-    <li>❤️ your laugh</li>
-    <li>❤️ the security you give me</li>
-    <li>❤️ your unpredictability</li>
-  </ul>
-  <p style="max-width: 700px; margin: 40px auto; font-size: 18px; text-align: center;">
-    I love you so deeply not because you fit some checklist but because you are unapologetically you. From our inside jokes to how we met, every piece of our story makes me more certain that I was meant to love you. You are my favorite person, my safe place, and the one who makes every day better.
-  </p>
-  <div style="text-align:center;">
-    <a href="index.html" class="back-button">← Back to Home</a>
+  <h1>Why I Love You ❤️</h1>
+
+  <div class="heart-list">
+    <div class="heart-item">Your kindness</div>
+    <div class="heart-item">Your love of animals</div>
+    <div class="heart-item">Your intelligence</div>
+    <div class="heart-item">Your beauty</div>
+    <div class="heart-item">Your humor</div>
+    <div class="heart-item">Your voice</div>
+    <div class="heart-item">Your stubbornness</div>
+    <div class="heart-item">Your laugh</div>
+    <div class="heart-item">The security you give me</div>
+    <div class="heart-item">Your unpredictability</div>
   </div>
+
+  <div class="love-paragraph">
+    I love you because you’re unlike anyone I’ve ever met. From the moment we started talking, something about you stood out — your strength, your humor, your beautiful weirdness. I fell for you in between inside jokes and quiet nights, at baseball games and aquariums, in the way you looked at me like you already knew my heart. You make life softer and wilder at the same time. I love you for all the chaos and comfort you bring, for how you challenge me, love me, laugh with me, and just... exist as you.
+  </div>
+
+  <a href="index.html" class="back-button">← Back to Home</a>
 </body>
 </html>
